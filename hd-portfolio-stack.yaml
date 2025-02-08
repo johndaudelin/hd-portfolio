@@ -13,7 +13,7 @@ Resources:
   S3Bucket:
     Type: "AWS::S3::Bucket"
     Properties:
-      BucketName: "hd-portfolio"
+      BucketName: "hd-portfolio-s3"
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
         BlockPublicPolicy: true
@@ -71,7 +71,7 @@ Resources:
     #checkov:skip=CKV_AWS_18: "This bucket is private and only for storing logs"
     Type: "AWS::S3::Bucket"
     Properties:
-      BucketName: "hd-portfolio-logs"
+      BucketName: "hd-portfolio-s3-logs"
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
         BlockPublicPolicy: true
@@ -141,6 +141,6 @@ Resources:
 
 Outputs:
   BucketName:
-    Value: "hd-portfolio"
+    Value: "hd-portfolio-s3"
   SPADomain:
     Value: !GetAtt CFDistribution.DomainName

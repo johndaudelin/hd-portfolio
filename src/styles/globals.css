@@ -1,5 +1,5 @@
 :root {
-  --primary-dark: #505f94;
+  --primary-dark: #292d30;
   --primary-text: #ededed;
   --alternative-text: #ededed7a;
 }
@@ -26,8 +26,4 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-a:hover {
-  color: var(--alternative-text);
 }
