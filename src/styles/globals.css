@@ -1,0 +1,33 @@
+:root {
+  --primary-dark: #505f94;
+  --primary-text: #ededed;
+  --alternative-text: #ededed7a;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--primary-text);
+  background: var(--primary-dark);
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--alternative-text);
+}
